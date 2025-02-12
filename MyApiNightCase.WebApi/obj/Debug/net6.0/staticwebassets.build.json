@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "I9CoauVPCvI7aWHE6sW5LmTqe/XsHwvexAIVSu81CXw=",
+  "Source": "MyApiNightCase.WebApi",
+  "BasePath": "_content/MyApiNightCase.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
