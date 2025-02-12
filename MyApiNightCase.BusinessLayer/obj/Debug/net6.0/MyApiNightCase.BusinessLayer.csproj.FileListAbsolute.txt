@@ -1,0 +1,17 @@
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\bin\Debug\net6.0\MyApiNightCase.BusinessLayer.deps.json
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\bin\Debug\net6.0\MyApiNightCase.BusinessLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\bin\Debug\net6.0\MyApiNightCase.BusinessLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\bin\Debug\net6.0\MyApiNightCase.DataAccessLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\bin\Debug\net6.0\MyApiNightCase.EntityLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\bin\Debug\net6.0\MyApiNightCase.DataAccessLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\bin\Debug\net6.0\MyApiNightCase.EntityLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.AssemblyInfo.cs
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNig.2B8B381D.Up2Date
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\refint\MyApiNightCase.BusinessLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\ref\MyApiNightCase.BusinessLayer.dll
