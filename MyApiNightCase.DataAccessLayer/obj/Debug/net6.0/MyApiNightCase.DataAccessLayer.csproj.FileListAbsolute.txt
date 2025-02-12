@@ -1,0 +1,15 @@
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\bin\Debug\net6.0\MyApiNightCase.DataAccessLayer.deps.json
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\bin\Debug\net6.0\MyApiNightCase.DataAccessLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\bin\Debug\net6.0\MyApiNightCase.DataAccessLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\bin\Debug\net6.0\MyApiNightCase.EntityLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\bin\Debug\net6.0\MyApiNightCase.EntityLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\MyApiNightCase.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\MyApiNightCase.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\MyApiNightCase.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\MyApiNightCase.DataAccessLayer.AssemblyInfo.cs
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\MyApiNightCase.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\MyApiNig.E549FE38.Up2Date
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\MyApiNightCase.DataAccessLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\refint\MyApiNightCase.DataAccessLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\MyApiNightCase.DataAccessLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.DataAccessLayer\obj\Debug\net6.0\ref\MyApiNightCase.DataAccessLayer.dll
