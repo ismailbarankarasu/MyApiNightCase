@@ -1,0 +1,14 @@
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\bin\Debug\net6.0\MyApiNightCase.EntityLayer.deps.json
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\bin\Debug\net6.0\MyApiNightCase.EntityLayer.runtimeconfig.json
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\bin\Debug\net6.0\MyApiNightCase.EntityLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\bin\Debug\net6.0\MyApiNightCase.EntityLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.csproj.AssemblyReference.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.AssemblyInfoInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.AssemblyInfo.cs
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\refint\MyApiNightCase.EntityLayer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.pdb
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.genruntimeconfig.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\ref\MyApiNightCase.EntityLayer.dll
