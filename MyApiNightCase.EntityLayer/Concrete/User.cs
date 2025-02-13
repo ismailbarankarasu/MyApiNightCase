@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace MyApiNightCase.EntityLayer.Concrete
 {
-    public class Author
+    public class User
     {
-        public int AuthorId { get; set; }
+        public int UserId { get; set; }
         public string NameSurname { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
         public string ImageUrl { get; set; }
-
-        public ICollection<Book> Books { get; set; }
     }
 }
