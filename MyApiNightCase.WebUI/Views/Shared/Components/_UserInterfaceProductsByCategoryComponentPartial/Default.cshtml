@@ -1,0 +1,99 @@
+﻿@model List<MyApiNightCase.WebUI.Dtos.BookWithAuthorAndCategory>
+
+@{
+    var categories = Model.Select(x => x.CategoryName).Distinct().Take(4).ToList();
+}
+
+<section id="popular-books" class="bookshelf py-5 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="section-header align-center">
+                    <div class="title">
+                        <span>Some quality items</span>
+                    </div>
+                    <h2 class="section-title">Popular Books</h2>
+                </div>
+
+                <ul class="tabs">
+                    <li data-tab-target="#all-genre" class="active tab">Tüm Kitaplar</li>
+                    @foreach (var category in categories)
+                    {
+                        <li data-tab-target="#@category.ToLower()" class="tab">@category</li>
+                    }
+                </ul>
+
+                <div class="tab-content">
+                    <!-- Tüm Kitaplar -->
+                    <div id="all-genre" data-tab-content class="active">
+                        <div class="row">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-md-3" data-category="@item.CategoryName">
+                                    <div class="product-item">
+                                        <figure class="product-style">
+                                            <img src="@item.ImageUrl" alt="Books" class="product-item" style="height:400px;">
+                                            <button type="button" class="add-to-cart" data-product-tile="add-to-cart">
+                                                Sepete Ekle
+                                            </button>
+                                        </figure>
+                                        <figcaption>
+                                            <h3>@item.BookTitle</h3>
+                                            <span>@item.AuthorName</span>
+                                            <div class="item-price">₺ @item.Price</div>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    <!-- Dinamik Kategoriler -->
+                    @foreach (var category in categories)
+                    {
+                        <div id="@category.ToLower()" data-tab-content>
+                            <div class="row">
+                                @foreach (var item in Model.Where(x => x.CategoryName == category))
+                                {
+                                    <div class="col-md-3">
+                                        <div class="product-item">
+                                            <figure class="product-style">
+                                                <img src="@item.ImageUrl" alt="Books" class="product-item" style="height:400px;">
+                                                <button type="button" class="add-to-cart" data-product-tile="add-to-cart">
+                                                    Sepete Ekle
+                                                </button>
+                                            </figure>
+                                            <figcaption>
+                                                <h3>@item.BookTitle</h3>
+                                                <span>@item.AuthorName</span>
+                                                <div class="item-price">₺ @item.Price</div>
+                                            </figcaption>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const tabs = document.querySelectorAll(".tab");
+        const contents = document.querySelectorAll("[data-tab-content]");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", function () {
+                tabs.forEach(t => t.classList.remove("active"));
+                contents.forEach(c => c.classList.remove("active"));
+
+                this.classList.add("active");
+                document.querySelector(this.getAttribute("data-tab-target")).classList.add("active");
+            });
+        });
+    });
+</script>

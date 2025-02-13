@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+@await Component.InvokeAsync("_UserInterfaceHeadComponentPartial")
+
+<body data-bs-spy="scroll" data-bs-target="#header" tabindex="0">
+
+	<div id="header-wrap">
+		@await Component.InvokeAsync("_UserInterfaceHeaderComponentPartial")
+	</div><!--header-wrap-->
+
+	@RenderBody()
+	
+
+
+	@await Component.InvokeAsync("_UserInterfaceFooterComponentPartial")
+
+	@await Component.InvokeAsync("_UserInterfaceScriptComponentPartial")
+
+</body>
+
+</html>

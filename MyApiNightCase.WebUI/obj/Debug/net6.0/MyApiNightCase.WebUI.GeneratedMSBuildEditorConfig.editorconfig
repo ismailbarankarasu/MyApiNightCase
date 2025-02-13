@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyApiNightCase.WebUI
+build_property.RootNamespace = MyApiNightCase.WebUI
+build_property.ProjectDir = C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebUI\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebUI
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceFeatureComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VGZWF0dXJlQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceFooterComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VGb290ZXJDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceFourRandomAuthorComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VGb3VyUmFuZG9tQXV0aG9yQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceHeadComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VIZWFkQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceHeaderComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VIZWFkZXJDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceLastFourBookComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VMYXN0Rm91ckJvb2tDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceProductsByCategoryComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VQcm9kdWN0c0J5Q2F0ZWdvcnlDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceRandomBookComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VSYW5kb21Cb29rQ29tcG9uZW50UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Components/_UserInterfaceScriptComponentPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1VzZXJJbnRlcmZhY2VTY3JpcHRDb21wb25lbnRQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/_UserInterfaceLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VySW50ZXJmYWNlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ismai/OneDrive/Masaüstü/my/MyApiNightCase/MyApiNightCase.WebUI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-xd2n9rf5i7

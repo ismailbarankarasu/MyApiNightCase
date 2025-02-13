@@ -1,0 +1,44 @@
+﻿@model MyApiNightCase.WebUI.Dtos.ResultRandomBookDto
+<section id="best-selling" class="leaf-pattern-overlay">
+	<div class="corner-pattern-overlay"></div>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+
+				<div class="row">
+
+					<div class="col-md-6">
+						<figure class="products-thumb">
+							<img src="@Model.ImageUrl" alt="book" class="single-image" style="height:550px;">
+						</figure>
+					</div>
+					
+					<div class="col-md-6">
+						<div class="product-entry">
+							<h2 class="section-title divider">Rastgele Kitap</h2>
+
+							<div class="products-content">
+								<div class="author-name">@Model.AuthorName</div>
+								<h3 class="item-title">@Model.BookTitle</h3>
+								<p>
+									Bu alana sayfa her yenilendiğinde rastgele bir kitap gelmektedir.
+								</p>
+								<div class="item-price">₺ @Model.Price</div>
+								<div class="btn-wrap">
+									<a href="#" class="btn-accent-arrow">
+										şimdi al <i class="icon icon-ns-arrow-right"></i>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<!-- / row -->
+					
+			</div>
+			
+		</div>
+	</div>
+</section>

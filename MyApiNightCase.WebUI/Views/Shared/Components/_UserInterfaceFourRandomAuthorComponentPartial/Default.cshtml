@@ -1,0 +1,31 @@
+﻿@model List<MyApiNightCase.WebUI.Dtos.RandomFourAuthorDto>
+<section id="special-offer" class="bookshelf pb-5 mb-5">
+
+    <div class="section-header align-center">
+        <div class="title">
+            <span>Sayfa Her Yenilendiğinde Rastgele 4 Yazar</span>
+        </div>
+        <h2 class="section-title">Çok Değerli Yazarlarımız</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="inner-content">
+                <div class="product-list" data-aos="fade-up">
+                    <div class="grid product-grid">
+                        @foreach (var item in Model){
+                        <div class="product-item">
+                                <figure class="product-style">
+                                    <img src="@item.ImageUrl" alt="Books" class="product-item" style="height:300px;">
+                                </figure>
+                                <figcaption>
+                                    <h3>@item.NameSurname</h3>
+                                </figcaption>
+                            </div>
+                        }
+                        </div><!--grid-->
+                    </div>
+                </div><!--inner-content-->
+            </div>
+        </div>
+    </section>
