@@ -46,5 +46,11 @@ namespace MyApiNightCase.WebApi.Controllers
             var value = _authorService.TGetById(id);
             return Ok(value);
         }
+        [HttpGet("RandomFourAuthor")]
+        public IActionResult RandomFourAuthor()
+        {
+            var values = _authorService.TRandomFourAuthor();
+            return Ok(values);
+        }
     }
 }

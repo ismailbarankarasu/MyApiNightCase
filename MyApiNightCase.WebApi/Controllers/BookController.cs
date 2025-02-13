@@ -45,5 +45,23 @@ namespace MyApiNightCase.WebApi.Controllers
             var value = _bookService.TGetById(id);
             return Ok(value);
         }
+        [HttpGet("GetRandomBookWithAuthor")]
+        public IActionResult GetRandomBookWithAuthor()
+        {
+            var values = _bookService.TGetRandomBookWithAuthor();
+            return Ok(values);
+        }
+        [HttpGet("GetLastFourBooks")]
+        public IActionResult GetLastFourBooks()
+        {
+            var value = _bookService.TGetLastFourBooks();
+            return Ok(value);
+        }
+        [HttpGet("AllBookWithAuthorAndCategory")]
+        public IActionResult AllBookWithAuthorAndCategory()
+        {
+            var values = _bookService.TAllBookWithAuthorAndCategory();
+            return Ok(values);
+        }
     }
 }
