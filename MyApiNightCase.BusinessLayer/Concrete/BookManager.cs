@@ -1,5 +1,6 @@
 ﻿using MyApiNightCase.BusinessLayer.Abstract;
 using MyApiNightCase.DataAccessLayer.Abstract;
+using MyApiNightCase.DataAccessLayer.Dtos;
 using MyApiNightCase.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,11 @@ namespace MyApiNightCase.BusinessLayer.Concrete
             _bookDal = bookDal;
         }
 
+        public List<BookWithAuthorAndCategory> TAllBookWithAuthorAndCategory()
+        {
+            return _bookDal.AllBookWithAuthorAndCategory();
+        }
+
         public void TDelete(int id)
         {
             _bookDal.Delete(id);
@@ -31,6 +37,16 @@ namespace MyApiNightCase.BusinessLayer.Concrete
         public Book TGetById(int id)
         {
             return _bookDal.GetById(id);
+        }
+
+        public List<LastFourBookWithAuthorDto> TGetLastFourBooks()
+        {
+            return _bookDal.GetLastFourBooks();
+        }
+
+        public BookWithAuthorDto TGetRandomBookWithAuthor()
+        {
+            return _bookDal.GetRandomBookWithAuthor();
         }
 
         public void TInsert(Book entity)

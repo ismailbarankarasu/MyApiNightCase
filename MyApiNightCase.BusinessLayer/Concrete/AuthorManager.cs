@@ -1,5 +1,6 @@
 ﻿using MyApiNightCase.BusinessLayer.Abstract;
 using MyApiNightCase.DataAccessLayer.Abstract;
+using MyApiNightCase.DataAccessLayer.Dtos;
 using MyApiNightCase.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -36,6 +37,11 @@ namespace MyApiNightCase.BusinessLayer.Concrete
         public void TInsert(Author entity)
         {
             _authorDal.Insert(entity);
+        }
+
+        public List<ResultAuthorDto> TRandomFourAuthor()
+        {
+            return  _authorDal.RandomFourAuthor();
         }
 
         public void TUpdate(Author entity)
