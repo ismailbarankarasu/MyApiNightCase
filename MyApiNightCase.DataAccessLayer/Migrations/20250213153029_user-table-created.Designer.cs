@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyApiNightCase.DataAccessLayer.Context;
 
@@ -10,9 +11,10 @@ using MyApiNightCase.DataAccessLayer.Context;
 namespace MyApiNightCase.DataAccessLayer.Migrations
 {
     [DbContext(typeof(ApiCaseContext))]
-    partial class ApiCaseContextModelSnapshot : ModelSnapshot
+    [Migration("20250213153029_user-table-created")]
+    partial class usertablecreated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

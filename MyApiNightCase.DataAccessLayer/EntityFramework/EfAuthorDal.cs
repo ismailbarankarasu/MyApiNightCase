@@ -1,5 +1,7 @@
-﻿using MyApiNightCase.DataAccessLayer.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using MyApiNightCase.DataAccessLayer.Abstract;
 using MyApiNightCase.DataAccessLayer.Context;
+using MyApiNightCase.DataAccessLayer.Dtos;
 using MyApiNightCase.DataAccessLayer.Repository;
 using MyApiNightCase.EntityLayer.Concrete;
 using System;
@@ -12,8 +14,24 @@ namespace MyApiNightCase.DataAccessLayer.EntityFramework
 {
     public class EfAuthorDal : GenericRepository<Author>, IAuthorDal
     {
-        public EfAuthorDal(ApiCaseContext context) : base(context)
+        private readonly ApiCaseContext context;
+        public EfAuthorDal(ApiCaseContext _context) : base(_context)
         {
+            context = _context;
+        }
+
+        public List<ResultAuthorDto> RandomFourAuthor()
+        {
+            var randomAuthors = context.Authors
+             .OrderBy(a => Guid.NewGuid())
+             .Take(4)
+             .Select(a => new ResultAuthorDto
+                 {
+                   NameSurname = a.NameSurname,
+                   ImageUrl = a.ImageUrl
+                 })
+             .ToList();
+            return randomAuthors;
         }
     }
 }

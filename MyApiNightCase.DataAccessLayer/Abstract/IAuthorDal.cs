@@ -1,4 +1,5 @@
-﻿using MyApiNightCase.EntityLayer.Concrete;
+﻿using MyApiNightCase.DataAccessLayer.Dtos;
+using MyApiNightCase.EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace MyApiNightCase.DataAccessLayer.Abstract
 {
     public interface IAuthorDal : IGenericDal<Author>
     {
+        public List<ResultAuthorDto> RandomFourAuthor();
     }
 }
