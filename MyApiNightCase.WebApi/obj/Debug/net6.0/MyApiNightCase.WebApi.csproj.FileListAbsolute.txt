@@ -7,6 +7,9 @@ C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\D
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\MyApiNightCase.WebApi.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\MyApiNightCase.WebApi.pdb
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Humanizer.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -17,6 +20,8 @@ C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\D
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
@@ -67,6 +72,7 @@ C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\obj\D
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\obj\Debug\net6.0\MyApiNightCase.WebApi.csproj.CoreCompileInputs.cache
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\obj\Debug\net6.0\MyApiNightCase.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\obj\Debug\net6.0\MyApiNightCase.WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\obj\Debug\net6.0\MyApiNightCase.WebApi.sourcelink.json
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\obj\Debug\net6.0\scopedcss\bundle\MyApiNightCase.WebApi.styles.css
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.WebApi\obj\Debug\net6.0\staticwebassets.development.json

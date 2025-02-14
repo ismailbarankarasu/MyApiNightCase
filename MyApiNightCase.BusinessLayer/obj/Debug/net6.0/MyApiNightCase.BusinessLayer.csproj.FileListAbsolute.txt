@@ -10,6 +10,7 @@ C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLaye
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.AssemblyInfoInputs.cache
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.AssemblyInfo.cs
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.sourcelink.json
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNig.2B8B381D.Up2Date
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\MyApiNightCase.BusinessLayer.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.BusinessLayer\obj\Debug\net6.0\refint\MyApiNightCase.BusinessLayer.dll

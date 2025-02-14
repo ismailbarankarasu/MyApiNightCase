@@ -7,6 +7,7 @@ C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.AssemblyInfoInputs.cache
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.AssemblyInfo.cs
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.sourcelink.json
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\refint\MyApiNightCase.EntityLayer.dll
 C:\Users\ismai\OneDrive\Masaüstü\my\MyApiNightCase\MyApiNightCase.EntityLayer\obj\Debug\net6.0\MyApiNightCase.EntityLayer.pdb
