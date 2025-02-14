@@ -513,12 +513,16 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\login\\index.html",
-      "PackagePath": "staticwebassets\\login\\index.html"
+      "Id": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\index.html",
+      "PackagePath": "staticwebassets\\loginDist\\index.html"
     },
     {
-      "Id": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\login\\style.css",
-      "PackagePath": "staticwebassets\\login\\style.css"
+      "Id": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\script.js",
+      "PackagePath": "staticwebassets\\loginDist\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\style.css",
+      "PackagePath": "staticwebassets\\loginDist\\style.css"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MyApiNightCase.WebUI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

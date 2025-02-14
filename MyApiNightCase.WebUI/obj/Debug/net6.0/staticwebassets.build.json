@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nKh8QdQbjRpbw2jX5gNj2Vy2Grgnge0M1h4xPs5Ak4Y=",
+  "Hash": "AaCUmnzByGR7g+Gy93H90JYttifADJ8sZ19yD45tGtU=",
   "Source": "MyApiNightCase.WebUI",
   "BasePath": "_content/MyApiNightCase.WebUI",
   "Mode": "Default",
@@ -2726,12 +2726,12 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\login\\index.html",
+      "Identity": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\index.html",
       "SourceId": "MyApiNightCase.WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\",
       "BasePath": "_content/MyApiNightCase.WebUI",
-      "RelativePath": "login/index#[.{fingerprint}]?.html",
+      "RelativePath": "loginDist/index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2740,19 +2740,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "53b8qy8vsx",
-      "Integrity": "37NTLXoWYlCwTeR3GbfTMJqZ2r9qT/xPrnqpCHFq9+U=",
+      "Fingerprint": "ajz3ouqiz2",
+      "Integrity": "WrmT0PwlfdSFXBcvhZgI/AJbsULJR/wf9/BCJyU8cX4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\login\\index.html"
+      "OriginalItemSpec": "wwwroot\\loginDist\\index.html"
     },
     {
-      "Identity": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\login\\style.css",
+      "Identity": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\script.js",
       "SourceId": "MyApiNightCase.WebUI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\",
       "BasePath": "_content/MyApiNightCase.WebUI",
-      "RelativePath": "login/style#[.{fingerprint}]?.css",
+      "RelativePath": "loginDist/script#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2761,11 +2761,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "09d4zceku0",
-      "Integrity": "FK9RbtJCTjpX/gTbh/ivdP99D+lNjitrkze59gwxMFU=",
+      "Fingerprint": "9zuxt2loct",
+      "Integrity": "6w8prR/rSXzWe2GjBgz/INdBJbP2OHI1XrzoZH2wAy4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\login\\style.css"
+      "OriginalItemSpec": "wwwroot\\loginDist\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\style.css",
+      "SourceId": "MyApiNightCase.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\",
+      "BasePath": "_content/MyApiNightCase.WebUI",
+      "RelativePath": "loginDist/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dibc9o2p3u",
+      "Integrity": "u9GTGcazsNTL+iZzkQCW43/KxbLn3hCmy+ZUa4cz86Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\loginDist\\style.css"
     }
   ],
   "Endpoints": [
@@ -13184,8 +13205,8 @@
       ]
     },
     {
-      "Route": "login/index.53b8qy8vsx.html",
-      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\login\\index.html",
+      "Route": "loginDist/index.ajz3ouqiz2.html",
+      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13194,7 +13215,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1660"
+          "Value": "2763"
         },
         {
           "Name": "Content-Type",
@@ -13202,11 +13223,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"37NTLXoWYlCwTeR3GbfTMJqZ2r9qT/xPrnqpCHFq9+U=\""
+          "Value": "\"WrmT0PwlfdSFXBcvhZgI/AJbsULJR/wf9/BCJyU8cX4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 15:17:33 GMT"
+          "Value": "Fri, 14 Feb 2025 13:03:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13216,21 +13237,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "53b8qy8vsx"
+          "Value": "ajz3ouqiz2"
         },
         {
           "Name": "label",
-          "Value": "login/index.html"
+          "Value": "loginDist/index.html"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-37NTLXoWYlCwTeR3GbfTMJqZ2r9qT/xPrnqpCHFq9+U="
+          "Value": "sha256-WrmT0PwlfdSFXBcvhZgI/AJbsULJR/wf9/BCJyU8cX4="
         }
       ]
     },
     {
-      "Route": "login/index.html",
-      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\login\\index.html",
+      "Route": "loginDist/index.html",
+      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13239,7 +13260,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1660"
+          "Value": "2763"
         },
         {
           "Name": "Content-Type",
@@ -13247,11 +13268,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"37NTLXoWYlCwTeR3GbfTMJqZ2r9qT/xPrnqpCHFq9+U=\""
+          "Value": "\"WrmT0PwlfdSFXBcvhZgI/AJbsULJR/wf9/BCJyU8cX4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Feb 2025 15:17:33 GMT"
+          "Value": "Fri, 14 Feb 2025 13:03:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13261,13 +13282,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-37NTLXoWYlCwTeR3GbfTMJqZ2r9qT/xPrnqpCHFq9+U="
+          "Value": "sha256-WrmT0PwlfdSFXBcvhZgI/AJbsULJR/wf9/BCJyU8cX4="
         }
       ]
     },
     {
-      "Route": "login/style.09d4zceku0.css",
-      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\login\\style.css",
+      "Route": "loginDist/script.9zuxt2loct.js",
+      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\script.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13276,19 +13297,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2787"
+          "Value": "214"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/css"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"FK9RbtJCTjpX/gTbh/ivdP99D+lNjitrkze59gwxMFU=\""
+          "Value": "\"6w8prR/rSXzWe2GjBgz/INdBJbP2OHI1XrzoZH2wAy4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 12 Nov 2021 09:22:42 GMT"
+          "Value": "Fri, 14 Feb 2025 13:03:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13298,21 +13319,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "09d4zceku0"
+          "Value": "9zuxt2loct"
         },
         {
           "Name": "label",
-          "Value": "login/style.css"
+          "Value": "loginDist/script.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-FK9RbtJCTjpX/gTbh/ivdP99D+lNjitrkze59gwxMFU="
+          "Value": "sha256-6w8prR/rSXzWe2GjBgz/INdBJbP2OHI1XrzoZH2wAy4="
         }
       ]
     },
     {
-      "Route": "login/style.css",
-      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\login\\style.css",
+      "Route": "loginDist/script.js",
+      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\script.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13321,19 +13342,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2787"
+          "Value": "214"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/css"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"FK9RbtJCTjpX/gTbh/ivdP99D+lNjitrkze59gwxMFU=\""
+          "Value": "\"6w8prR/rSXzWe2GjBgz/INdBJbP2OHI1XrzoZH2wAy4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 12 Nov 2021 09:22:42 GMT"
+          "Value": "Fri, 14 Feb 2025 13:03:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13343,7 +13364,89 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FK9RbtJCTjpX/gTbh/ivdP99D+lNjitrkze59gwxMFU="
+          "Value": "sha256-6w8prR/rSXzWe2GjBgz/INdBJbP2OHI1XrzoZH2wAy4="
+        }
+      ]
+    },
+    {
+      "Route": "loginDist/style.css",
+      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9GTGcazsNTL+iZzkQCW43/KxbLn3hCmy+ZUa4cz86Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 13:03:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9GTGcazsNTL+iZzkQCW43/KxbLn3hCmy+ZUa4cz86Y="
+        }
+      ]
+    },
+    {
+      "Route": "loginDist/style.dibc9o2p3u.css",
+      "AssetFile": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\wwwroot\\loginDist\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6240"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"u9GTGcazsNTL+iZzkQCW43/KxbLn3hCmy+ZUa4cz86Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 13:03:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dibc9o2p3u"
+        },
+        {
+          "Name": "label",
+          "Value": "loginDist/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-u9GTGcazsNTL+iZzkQCW43/KxbLn3hCmy+ZUa4cz86Y="
         }
       ]
     },
@@ -13370,7 +13473,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 12:37:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13407,7 +13510,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 12:37:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13452,7 +13555,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 12:37:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13497,7 +13600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Feb 2025 11:22:52 GMT"
+          "Value": "Fri, 14 Feb 2025 12:37:12 GMT"
         },
         {
           "Name": "Cache-Control",
