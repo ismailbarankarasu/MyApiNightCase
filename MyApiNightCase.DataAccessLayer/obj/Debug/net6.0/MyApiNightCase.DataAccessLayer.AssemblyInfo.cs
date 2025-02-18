@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyApiNightCase.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf0a08710aa342ad10808cdc5d894263fcc92896")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6463df820313366bc18b0c7c0438fd0760a02f78")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyApiNightCase.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyApiNightCase.DataAccessLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
