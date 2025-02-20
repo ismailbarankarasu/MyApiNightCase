@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3HCqD2oALPE=",
+  "dgSpecHash": "PTv9XS2yOCM=",
   "success": true,
   "projectFilePath": "C:\\Users\\ismai\\OneDrive\\Masaüstü\\my\\MyApiNightCase\\MyApiNightCase.WebUI\\MyApiNightCase.WebUI.csproj",
   "expectedPackageFiles": [
@@ -215,7 +215,8 @@
     "C:\\Users\\ismai\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\ismai\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\ismai\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\ismai\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\ismai\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\ismai\\.nuget\\packages\\microsoft.net.sdk.compilers.toolset\\9.0.200\\microsoft.net.sdk.compilers.toolset.9.0.200.nupkg.sha512"
   ],
   "logs": [
     {

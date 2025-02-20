@@ -2515,7 +2515,7 @@
         },
         "runtime": {
           "MyApiNightCase.BusinessLayer.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -2526,7 +2526,7 @@
         },
         "runtime": {
           "MyApiNightCase.DataAccessLayer.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -2539,7 +2539,7 @@
         },
         "runtime": {
           "MyApiNightCase.EntityLayer.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
