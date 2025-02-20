@@ -1,4 +1,5 @@
-﻿
+﻿@model (RegisterViewModel RegisterVM, LoginViewModel LoginVM)
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = null;
 }
@@ -20,29 +21,37 @@
 			<div class="col align-items-center flex-col sign-up">
 				<div class="form-wrapper align-items-center">
 					<div class="form sign-up">
-						<div class="input-group">
-							<i class='bx bxs-user'></i>
-							<input type="text" placeholder="Kullanıcı Adı">
-						</div>
-						<div class="input-group">
-							<i class='bx bx-mail-send'></i>
-							<input type="email" placeholder="Email">
-						</div>
-						<div class="input-group">
-							<i class='bx bxs-lock-alt'></i>
-							<input type="text" placeholder="Adınız">
-						</div>
-						<div class="input-group">
-							<i class='bx bxs-lock-alt'></i>
-							<input type="text" placeholder="Soyadınız">
-						</div>
-						<div class="input-group">
-							<i class='bx bxs-lock-alt'></i>
-							<input type="password" placeholder="Şifreniz">
-						</div>
-						<button>
-							Kayıt Ol
-						</button>
+						<form method="post" asp-controller="Register" asp-action="Index">
+							<div class="input-group">
+								<i class='bx bxs-user'></i>
+								<input type="text" name="RegisterVM.UserName" placeholder="Kullanıcı Adı">
+								<span asp-validation-for="RegisterVM.UserName" class="text-danger"></span>
+							</div>
+							<div class="input-group">
+								<i class='bx bx-mail-send'></i>
+								<input type="email" name="RegisterVM.Email" placeholder="Email">
+								<span asp-validation-for="RegisterVM.Email" class="text-danger"></span>
+							</div>
+							<div class="input-group">
+								<i class='bx bxs-lock-alt'></i>
+								<input type="text" name="RegisterVM.Name" placeholder="Adınız">
+								<span asp-validation-for="RegisterVM.Name" class="text-danger"></span>
+							</div>
+							<div class="input-group">
+								<i class='bx bxs-lock-alt'></i>
+								<input type="text" name="RegisterVM.Surname" placeholder="Soyadınız">
+								<span asp-validation-for="RegisterVM.Surname" class="text-danger"></span>
+							</div>
+							<div class="input-group">
+								<i class='bx bxs-lock-alt'></i>
+								<input type="password" name="RegisterVM.Password" placeholder="Şifreniz">
+								<span asp-validation-for="RegisterVM.Password" class="text-danger"></span>
+							</div>
+							<button type="submit">
+								Kayıt Ol
+							</button>
+							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						</form>
 						<p>
 							<span>
 								Zaten Hesabın Varmı ?
@@ -60,17 +69,26 @@
 			<div class="col align-items-center flex-col sign-in">
 				<div class="form-wrapper align-items-center">
 					<div class="form sign-in">
-						<div class="input-group">
-							<i class='bx bxs-user'></i>
-							<input type="text" placeholder="Username">
-						</div>
-						<div class="input-group">
-							<i class='bx bxs-lock-alt'></i>
-							<input type="password" placeholder="Password">
-						</div>
-						<button>
-							Giriş Yap
-						</button>
+						<form method="post" asp-controller="Login" asp-action="Index">
+							@if (ViewData["ReturnUrl"] != null)
+							{
+								<input type="hidden" name="returnUrl" value="@ViewData["ReturnUrl"]" />
+							}
+							<div class="input-group">
+								<i class='bx bxs-user'></i>
+								<input type="text" name="LoginVM.UserName" asp-for="LoginVM.UserName" placeholder="Username">
+								<span asp-validation-for="LoginVM.UserName" class="text-danger"></span>
+							</div>
+							<div class="input-group">
+								<i class='bx bxs-lock-alt'></i>
+								<input type="password" name="LoginVM.Password" asp-for="LoginVM.Password" placeholder="Password">
+								<span asp-validation-for="LoginVM.Password" class="text-danger"></span>
+							</div>
+							<button type="submit">
+								Giriş Yap
+							</button>
+							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+						</form>
 						<p>
 							<b>
 								Şifremi Unuttum ?

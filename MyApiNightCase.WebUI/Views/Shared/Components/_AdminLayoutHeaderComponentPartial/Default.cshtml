@@ -1,0 +1,92 @@
+﻿<header class="app-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+                <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                    <i class="ti ti-menu-2"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+                <li class="nav-item me-3">
+                    <div class="welcome-message">
+                        <span class="text-muted">Hoşgeldin,</span>
+                        <span class="fw-bold text-dark ms-1">@ViewBag.UserName</span>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        <img src="@ViewBag.ImageUrl" alt="@ViewBag.UserName" width="45" height="45" class="profile-image rounded-circle">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                        <div class="message-body">
+                            <div class="d-flex align-items-center gap-2 dropdown-item">
+                                <i class="ti ti-user fs-6"></i>
+                                <p class="mb-0 fs-3">@ViewBag.UserName</p>
+                            </div>
+                            <form method="post" action="/Login/Logout" id="logoutForm">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-outline-primary mx-3 mt-2 d-block w-100">Çıkış Yap</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<style>
+    .dropdown-menu {
+        min-width: 200px;
+    }
+
+    .message-body {
+        padding: 10px 0;
+    }
+
+    .dropdown-item {
+        padding: 8px 15px;
+    }
+
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+
+    .welcome-message {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+        .welcome-message .text-muted {
+            font-size: 0.95rem;
+        }
+
+    .nav-icon-hover .profile-image {
+        border: 2px solid #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        object-fit: cover; 
+    }
+
+    .nav-icon-hover:hover .profile-image {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    @@media (max-width: 768px) {
+        .welcome-message
+
+    {
+        display: none; 
+    }
+
+    .nav-icon-hover .profile-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    }
+</style>
