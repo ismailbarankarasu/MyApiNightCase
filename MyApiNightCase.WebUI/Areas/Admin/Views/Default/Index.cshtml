@@ -1,7 +1,177 @@
-﻿
+﻿@model List<MyApiNightCase.WebUI.Dtos.BookWithAuthorAndCategory>
+@using System.Linq
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var currentPage = ViewBag.CurrentPage;
+    var totalPages = ViewBag.TotalPages;
+    var totalItems = ViewBag.TotalItems;
+    string GetCategoryColor(string categoryName)
+    {
+        return categoryName?.ToLower() switch
+        {
+            "roman" => "bg-primary",           // Mavi
+            "hikaye" => "bg-success",          // Yeşil
+            "çocuk kitabı" => "bg-warning",    // Sarı
+            _ => "bg-secondary"                
+        };
+    }
 }
+<style>
+    .category-badge {
+        transition: all 0.3s ease;
+        padding: 8px 15px;
+        font-size: 0.85rem;
+    }
 
+        .category-badge:hover {
+            transform: scale(1.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+    .bg-primary {
+        background-color: #0d6efd !important;
+        box-shadow: 0 2px 4px rgba(13, 110, 253, 0.3);
+    }
+
+    .bg-success {
+        background-color: #198754 !important;
+        box-shadow: 0 2px 4px rgba(25, 135, 84, 0.3);
+    }
+
+    .bg-warning {
+        background-color: #ffc107 !important;
+        color: #000 !important;
+        box-shadow: 0 2px 4px rgba(255, 193, 7, 0.3);
+    }
+</style>
 @await Component.InvokeAsync("_AdminLayoutCardComponentPartial")
+
+<div class="container-fluid">
+    <!-- Hata Mesajı -->
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Kitap Listesi -->
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title fw-semibold mb-4">Kitap Listesi</h5>
+                    <div class="table-responsive">
+                        <table class="table text-nowrap mb-0 align-middle">
+                            <thead class="text-dark fs-4">
+                                <tr>
+                                    <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Kitap</h6></th>
+                                    <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Yazar</h6></th>
+                                    <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Kategori</h6></th>
+                                    <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Fiyat</h6></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model != null && Model.Count > 0)
+                                {
+                                    @foreach (var book in Model)
+                                    {
+                                        <tr>
+                                            <td class="border-bottom-0">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    @if (!string.IsNullOrEmpty(book.ImageUrl))
+                                                    {
+                                                        <img src="@book.ImageUrl" alt="@book.BookTitle" class="rounded-circle" width="40" height="40">
+                                                    }
+                                                    else
+                                                    {
+                                                        <img src="/images/default-book.png" alt="Default" class="rounded-circle" width="40" height="40">
+                                                    }
+                                                    <h6 class="fw-semibold mb-0">@book.BookTitle</h6>
+                                                </div>
+                                            </td>
+                                            <td class="border-bottom-0">
+                                                <p class="mb-0 fw-normal">@book.AuthorName</p>
+                                            </td>
+                                            <td class="border-bottom-0">
+                                                <span class="badge category-badge @GetCategoryColor(book.CategoryName) rounded-3 fw-semibold">
+                                                    @book.CategoryName
+                                                </span>
+                                            </td>
+                                            <td class="border-bottom-0">
+                                                <h6 class="fw-semibold mb-0 fs-4">@book.Price.ToString("C2")</h6>
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center py-4">
+                                            <div class="alert alert-info mb-0">
+                                                Gösterilecek kitap bulunamadı.
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        <!-- Sayfalama -->
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="text-muted">
+                                Toplam @totalItems kayıttan @((currentPage - 1) * 5 + 1) - @Math.Min(currentPage * 5, totalItems) arası gösteriliyor
+                            </div>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    @if (currentPage > 1)
+                                    {
+                                        <li class="page-item">
+                                            <a class="page-link" href="@Url.Action("Index", new { page = currentPage - 1 })" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                    }
+
+                                    @for (int i = 1; i <= totalPages; i++)
+                                    {
+                                        <li class="page-item @(i == currentPage ? "active" : "")">
+                                            <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                                        </li>
+                                    }
+
+                                    @if (currentPage < totalPages)
+                                    {
+                                        <li class="page-item">
+                                            <a class="page-link" href="@Url.Action("Index", new { page = currentPage + 1 })" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    }
+                                </ul>
+                            </nav>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.getElementById('searchInput').addEventListener('input', function(e) {
+        var searchText = e.target.value.toLowerCase();
+        var rows = document.querySelectorAll('tbody tr');
+
+        rows.forEach(function(row) {
+            var text = row.textContent.toLowerCase();
+            row.style.display = text.includes(searchText) ? '' : 'none';
+        });
+    });
+</script>
