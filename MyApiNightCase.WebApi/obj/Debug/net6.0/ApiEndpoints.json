@@ -18,8 +18,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "author",
-        "Type": "MyApiNightCase.EntityLayer.Concrete.Author",
+        "Name": "authorDto",
+        "Type": "MyApiNightCase.WebApi.Dtos.AuthorAddUpdateDto",
         "IsRequired": true
       }
     ],
@@ -50,11 +50,21 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "author",
-        "Type": "MyApiNightCase.EntityLayer.Concrete.Author",
+        "Name": "authorDto",
+        "Type": "MyApiNightCase.WebApi.Dtos.AuthorAddUpdateDto",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.AuthorController",
+    "Method": "AuthorCount",
+    "RelativePath": "api/Author/AuthorCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -95,15 +105,55 @@
   },
   {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
+    "Method": "AllBookWithAuthorAndCategory",
+    "RelativePath": "api/Book/AllBookWithAuthorAndCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
+    "Method": "AvgBookPrice",
+    "RelativePath": "api/Book/AvgBookPrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
+    "Method": "BookCount",
+    "RelativePath": "api/Book/BookCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
+    "Method": "BookWithAuthorListAndCategoryList",
+    "RelativePath": "api/Book/BookWithAuthorListAndCategoryList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
     "Method": "CreateBook",
-    "RelativePath": "api/Book",
+    "RelativePath": "api/Book/CreateBook",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "book",
-        "Type": "MyApiNightCase.EntityLayer.Concrete.Book",
+        "Name": "bookDto",
+        "Type": "MyApiNightCase.WebApi.Dtos.BookAddUpdateDto",
         "IsRequired": true
       }
     ],
@@ -112,7 +162,7 @@
   {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
     "Method": "DeleteBook",
-    "RelativePath": "api/Book",
+    "RelativePath": "api/Book/DeleteBook",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -123,32 +173,6 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
-    "Method": "UpdateBook",
-    "RelativePath": "api/Book",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "book",
-        "Type": "MyApiNightCase.EntityLayer.Concrete.Book",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
-    "Method": "AllBookWithAuthorAndCategory",
-    "RelativePath": "api/Book/AllBookWithAuthorAndCategory",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -188,6 +212,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.BookController",
+    "Method": "UpdateBook",
+    "RelativePath": "api/Book/UpdateBook",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookDto",
+        "Type": "MyApiNightCase.WebApi.Dtos.BookAddUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.CategoryController",
     "Method": "CategoryList",
     "RelativePath": "api/Category",
@@ -206,8 +246,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "category",
-        "Type": "MyApiNightCase.EntityLayer.Concrete.Category",
+        "Name": "categoryDto",
+        "Type": "MyApiNightCase.WebApi.Dtos.CategoryAddUpdateDto",
         "IsRequired": true
       }
     ],
@@ -238,11 +278,21 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "category",
-        "Type": "MyApiNightCase.EntityLayer.Concrete.Category",
+        "Name": "categoryDto",
+        "Type": "MyApiNightCase.WebApi.Dtos.CategoryAddUpdateDto",
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.CategoryController",
+    "Method": "CategoryCount",
+    "RelativePath": "api/Category/CategoryCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

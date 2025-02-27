@@ -24,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorAddUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorAddUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorAddUpdateDto"
               }
             }
           }
@@ -73,17 +73,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorAddUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorAddUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Author"
+                "$ref": "#/components/schemas/AuthorAddUpdateDto"
               }
             }
           }
@@ -129,6 +129,18 @@
         }
       }
     },
+    "/api/Author/AuthorCount": {
+      "get": {
+        "tags": [
+          "Author"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Book": {
       "get": {
         "tags": [
@@ -139,7 +151,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Book/CreateBook": {
       "post": {
         "tags": [
           "Book"
@@ -148,17 +162,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/BookAddUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/BookAddUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/BookAddUpdateDto"
               }
             }
           }
@@ -168,7 +182,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Book/DeleteBook": {
       "delete": {
         "tags": [
           "Book"
@@ -188,7 +204,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Book/UpdateBook": {
       "put": {
         "tags": [
           "Book"
@@ -197,17 +215,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/BookAddUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/BookAddUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Book"
+                "$ref": "#/components/schemas/BookAddUpdateDto"
               }
             }
           }
@@ -277,6 +295,42 @@
         }
       }
     },
+    "/api/Book/BookCount": {
+      "get": {
+        "tags": [
+          "Book"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Book/AvgBookPrice": {
+      "get": {
+        "tags": [
+          "Book"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Book/BookWithAuthorListAndCategoryList": {
+      "get": {
+        "tags": [
+          "Book"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Category": {
       "get": {
         "tags": [
@@ -296,17 +350,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Category"
+                "$ref": "#/components/schemas/CategoryAddUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Category"
+                "$ref": "#/components/schemas/CategoryAddUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Category"
+                "$ref": "#/components/schemas/CategoryAddUpdateDto"
               }
             }
           }
@@ -345,17 +399,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Category"
+                "$ref": "#/components/schemas/CategoryAddUpdateDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Category"
+                "$ref": "#/components/schemas/CategoryAddUpdateDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Category"
+                "$ref": "#/components/schemas/CategoryAddUpdateDto"
               }
             }
           }
@@ -381,6 +435,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Category/CategoryCount": {
+      "get": {
+        "tags": [
+          "Category"
         ],
         "responses": {
           "200": {
@@ -504,7 +570,7 @@
   },
   "components": {
     "schemas": {
-      "Author": {
+      "AuthorAddUpdateDto": {
         "type": "object",
         "properties": {
           "authorId": {
@@ -518,18 +584,11 @@
           "imageUrl": {
             "type": "string",
             "nullable": true
-          },
-          "books": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Book"
-            },
-            "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "Book": {
+      "BookAddUpdateDto": {
         "type": "object",
         "properties": {
           "bookId": {
@@ -552,20 +611,14 @@
             "type": "integer",
             "format": "int32"
           },
-          "author": {
-            "$ref": "#/components/schemas/Author"
-          },
           "categoryId": {
             "type": "integer",
             "format": "int32"
-          },
-          "category": {
-            "$ref": "#/components/schemas/Category"
           }
         },
         "additionalProperties": false
       },
-      "Category": {
+      "CategoryAddUpdateDto": {
         "type": "object",
         "properties": {
           "categoryId": {
@@ -574,13 +627,6 @@
           },
           "name": {
             "type": "string",
-            "nullable": true
-          },
-          "books": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/Book"
-            },
             "nullable": true
           }
         },
