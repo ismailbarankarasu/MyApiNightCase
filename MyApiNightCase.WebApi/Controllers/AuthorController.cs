@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyApiNightCase.BusinessLayer.Abstract;
 using MyApiNightCase.EntityLayer.Concrete;
+using MyApiNightCase.WebApi.Dtos;
 
 namespace MyApiNightCase.WebApi.Controllers
 {
@@ -16,27 +17,40 @@ namespace MyApiNightCase.WebApi.Controllers
         {
             _authorService = authorService;
         }
-        [HttpGet]
+        [HttpGet("AuthorList")]
         public IActionResult AuthorList()
         {
             var values = _authorService.TGetAll();
             return Ok(values);
         }
-        [HttpPost]
-        public IActionResult CreateAuthor(Author author)
+        [HttpPost("CreateAuthor")]
+        public IActionResult CreateAuthor(AuthorAddUpdateDto authorDto)
         {
+            var author = new Author
+            {
+                AuthorId = authorDto.AuthorId,
+                NameSurname = authorDto.NameSurname,
+                ImageUrl = authorDto.ImageUrl
+
+            };
             _authorService.TInsert(author);
             return Ok("Ekleme İşlemi Başarılı");
         }
-        [HttpDelete]
+        [HttpDelete("DeleteAuthor")]
         public IActionResult DeleteAuthor(int id) 
         {
             _authorService.TDelete(id);
             return Ok("Silme İşlemi Başarılı");
         }
-        [HttpPut]
-        public IActionResult UpdateAuthor(Author author)
+        [HttpPut("UpdateAuthor")]
+        public IActionResult UpdateAuthor(AuthorAddUpdateDto authorDto)
         {
+            var author = new Author
+            {
+                AuthorId = authorDto.AuthorId,
+                NameSurname = authorDto.NameSurname,
+                ImageUrl = authorDto.ImageUrl
+            };
             _authorService.TUpdate(author);
             return Ok("Güncelleme İşlemi Başarılı");
         }
@@ -51,6 +65,12 @@ namespace MyApiNightCase.WebApi.Controllers
         {
             var values = _authorService.TRandomFourAuthor();
             return Ok(values);
+        }
+        [HttpGet("AuthorCount")]
+        public IActionResult AuthorCount()
+        {
+            var value = _authorService.TAuthorCount();
+            return Ok(value);
         }
     }
 }

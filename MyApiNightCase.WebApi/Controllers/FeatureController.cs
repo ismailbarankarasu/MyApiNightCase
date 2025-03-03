@@ -21,25 +21,25 @@ namespace MyApiNightCase.WebApi.Controllers
             var values = _featureService.TGetAll();
             return Ok(values);
         }
-        [HttpPost]
+        [HttpPost("CreateFeature")]
         public IActionResult CreateFeature(Feature feature)
         {
             _featureService.TInsert(feature);
             return Ok("Ekleme Başarılı");
         }
-        [HttpDelete]
+        [HttpDelete("DeleteFeature")]
         public IActionResult DeleteFeature(int id)
         {
             _featureService.TDelete(id);
             return Ok("Silme Başarılı");
         }
-        [HttpPut]
-        public IActionResult UpdateCategory(Feature feature)
+        [HttpPut("UpdateFeature")]
+        public IActionResult UpdateFeature(Feature feature)
         {
             _featureService.TUpdate(feature);
             return Ok("Güncelleme Yapıldı");
         }
-        [HttpGet("GetCategory")]
+        [HttpGet("GetFeature")]
         public IActionResult GetFeature(int id)
         {
             var value = _featureService.TGetById(id);

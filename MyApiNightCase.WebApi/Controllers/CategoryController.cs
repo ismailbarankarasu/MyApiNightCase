@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MyApiNightCase.BusinessLayer.Abstract;
 using MyApiNightCase.EntityLayer.Concrete;
+using MyApiNightCase.WebApi.Dtos;
 
 namespace MyApiNightCase.WebApi.Controllers
 {
@@ -22,8 +23,13 @@ namespace MyApiNightCase.WebApi.Controllers
             return Ok(values);
         }
         [HttpPost]
-        public IActionResult CreateCategory(Category category)
+        public IActionResult CreateCategory(CategoryAddUpdateDto categoryDto)
         {
+            var category = new Category
+            {
+                CategoryId = categoryDto.CategoryId,
+                Name = categoryDto.Name
+            };
             _categoryService.TInsert(category);
             return Ok("Ekleme İşlemi Başarılı");
         }
@@ -34,8 +40,13 @@ namespace MyApiNightCase.WebApi.Controllers
             return Ok("Silme İşlemi Başarılı");
         }
         [HttpPut]
-        public IActionResult UpdateCategory(Category category)
+        public IActionResult UpdateCategory(CategoryAddUpdateDto categoryDto)
         {
+            var category = new Category
+            {
+                CategoryId = categoryDto.CategoryId,
+                Name = categoryDto.Name
+            };
             _categoryService.TUpdate(category);
             return Ok("Güncelleme İşlemi Yapıldı");
         }
@@ -43,6 +54,12 @@ namespace MyApiNightCase.WebApi.Controllers
         public IActionResult GetCategory(int id)
         {
             var value = _categoryService.TGetById(id);
+            return Ok(value);
+        }
+        [HttpGet("CategoryCount")]
+        public IActionResult CategoryCount()
+        {
+            var value = _categoryService.TCategoryCount();
             return Ok(value);
         }
     }

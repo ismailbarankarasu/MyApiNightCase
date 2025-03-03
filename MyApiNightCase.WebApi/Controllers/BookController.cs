@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MyApiNightCase.BusinessLayer.Abstract;
 using MyApiNightCase.EntityLayer.Concrete;
+using MyApiNightCase.WebApi.Dtos;
 
 namespace MyApiNightCase.WebApi.Controllers
 {
@@ -21,21 +22,40 @@ namespace MyApiNightCase.WebApi.Controllers
             var values = _bookService.TGetAll();
             return Ok(values);
         }
-        [HttpPost]
-        public IActionResult CreateBook(Book book)
+        [HttpPost("CreateBook")]
+        public IActionResult CreateBook(BookAddUpdateDto bookDto)
         {
+            var book = new Book
+            {
+                Title = bookDto.Title,
+                Price = bookDto.Price,
+                ImageUrl = bookDto.ImageUrl,
+                AuthorId = bookDto.AuthorId,
+                CategoryId = bookDto.CategoryId
+            };
+
             _bookService.TInsert(book);
             return Ok("Ekleme İşlemi Başarılı");
         }
-        [HttpDelete]
+        [HttpDelete("DeleteBook")]
         public IActionResult DeleteBook(int id)
         { 
             _bookService.TDelete(id);
             return Ok("Silme İşlemi Başarılı");
         }
-        [HttpPut]
-        public IActionResult UpdateBook(Book book)
+        [HttpPut("UpdateBook")]
+        public IActionResult UpdateBook(BookAddUpdateDto bookDto)
         {
+            var book = new Book
+            {
+                BookId = bookDto.BookId,
+                Title = bookDto.Title,
+                Price = bookDto.Price,
+                ImageUrl = bookDto.ImageUrl,
+                AuthorId = bookDto.AuthorId,
+                CategoryId = bookDto.CategoryId
+            };
+
             _bookService.TUpdate(book);
             return Ok("Güncelleme İşlemi Başarılı");
         }
@@ -61,6 +81,24 @@ namespace MyApiNightCase.WebApi.Controllers
         public IActionResult AllBookWithAuthorAndCategory()
         {
             var values = _bookService.TAllBookWithAuthorAndCategory();
+            return Ok(values);
+        }
+        [HttpGet("BookCount")]
+        public IActionResult BookCount()
+        {
+            var value = _bookService.TBookCount();
+            return Ok(value);
+        }
+        [HttpGet("AvgBookPrice")]
+        public IActionResult AvgBookPrice()
+        {
+            var value = _bookService.TAvgBookPrice();
+            return Ok(value);
+        }
+        [HttpGet("BookWithAuthorListAndCategoryList")]
+        public IActionResult BookWithAuthorListAndCategoryList()
+        {
+            var values = _bookService.TAllBookWithAuthorListAndCategoryList();
             return Ok(values);
         }
     }

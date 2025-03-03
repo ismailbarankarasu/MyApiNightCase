@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Author": {
+    "/api/Author/AuthorList": {
       "get": {
         "tags": [
           "Author"
@@ -15,7 +15,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Author/CreateAuthor": {
       "post": {
         "tags": [
           "Author"
@@ -44,7 +46,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Author/DeleteAuthor": {
       "delete": {
         "tags": [
           "Author"
@@ -64,7 +68,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Author/UpdateAuthor": {
       "put": {
         "tags": [
           "Author"
@@ -465,7 +471,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Feature/CreateFeature": {
       "post": {
         "tags": [
           "Feature"
@@ -494,7 +502,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Feature/DeleteFeature": {
       "delete": {
         "tags": [
           "Feature"
@@ -514,7 +524,9 @@
             "description": "Success"
           }
         }
-      },
+      }
+    },
+    "/api/Feature/UpdateFeature": {
       "put": {
         "tags": [
           "Feature"
@@ -545,7 +557,7 @@
         }
       }
     },
-    "/api/Feature/GetCategory": {
+    "/api/Feature/GetFeature": {
       "get": {
         "tags": [
           "Feature"

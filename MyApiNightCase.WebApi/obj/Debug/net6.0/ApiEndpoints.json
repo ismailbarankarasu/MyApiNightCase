@@ -1,8 +1,18 @@
 [
   {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.AuthorController",
+    "Method": "AuthorCount",
+    "RelativePath": "api/Author/AuthorCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.AuthorController",
     "Method": "AuthorList",
-    "RelativePath": "api/Author",
+    "RelativePath": "api/Author/AuthorList",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +22,7 @@
   {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.AuthorController",
     "Method": "CreateAuthor",
-    "RelativePath": "api/Author",
+    "RelativePath": "api/Author/CreateAuthor",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +38,7 @@
   {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.AuthorController",
     "Method": "DeleteAuthor",
-    "RelativePath": "api/Author",
+    "RelativePath": "api/Author/DeleteAuthor",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -39,32 +49,6 @@
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MyApiNightCase.WebApi.Controllers.AuthorController",
-    "Method": "UpdateAuthor",
-    "RelativePath": "api/Author",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "authorDto",
-        "Type": "MyApiNightCase.WebApi.Dtos.AuthorAddUpdateDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MyApiNightCase.WebApi.Controllers.AuthorController",
-    "Method": "AuthorCount",
-    "RelativePath": "api/Author/AuthorCount",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -91,6 +75,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.AuthorController",
+    "Method": "UpdateAuthor",
+    "RelativePath": "api/Author/UpdateAuthor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorDto",
+        "Type": "MyApiNightCase.WebApi.Dtos.AuthorAddUpdateDto",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -324,7 +324,7 @@
   {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.FeatureController",
     "Method": "CreateFeature",
-    "RelativePath": "api/Feature",
+    "RelativePath": "api/Feature/CreateFeature",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -340,7 +340,7 @@
   {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.FeatureController",
     "Method": "DeleteFeature",
-    "RelativePath": "api/Feature",
+    "RelativePath": "api/Feature/DeleteFeature",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -355,24 +355,8 @@
   },
   {
     "ContainingType": "MyApiNightCase.WebApi.Controllers.FeatureController",
-    "Method": "UpdateCategory",
-    "RelativePath": "api/Feature",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "feature",
-        "Type": "MyApiNightCase.EntityLayer.Concrete.Feature",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MyApiNightCase.WebApi.Controllers.FeatureController",
     "Method": "GetFeature",
-    "RelativePath": "api/Feature/GetCategory",
+    "RelativePath": "api/Feature/GetFeature",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -381,6 +365,22 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MyApiNightCase.WebApi.Controllers.FeatureController",
+    "Method": "UpdateFeature",
+    "RelativePath": "api/Feature/UpdateFeature",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "feature",
+        "Type": "MyApiNightCase.EntityLayer.Concrete.Feature",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
