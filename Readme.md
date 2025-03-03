@@ -1,7 +1,7 @@
 # 📚 MyApiNightCase - Modern Kitap Yönetim Sistemi
 
 <div align="center">
-  <img src="photos/dashboard.png" alt="Dashboard" width="800">
+  <img src="photos/Admin/Dashboard.jpg" alt="Dashboard" width="800">
 </div>
 
 ## 🌟 Proje Hakkında
@@ -49,12 +49,12 @@ MyApiNightCase/
 
 ### Kitap Listesi
 <div align="center">
-  <img src="photos/books.png" alt="Kitap Listesi" width="800">
+  <img src="photos/Admin/Bookl.jpg" alt="Kitap Listesi" width="800">
 </div>
 
 ### Yazar Yönetimi
 <div align="center">
-  <img src="photos/authors.png" alt="Yazar Yönetimi" width="800">
+  <img src="photos/Admin/Authors.jpg" alt="Yazar Yönetimi" width="800">
 </div>
 
 ## 🛠️ Kurulum
