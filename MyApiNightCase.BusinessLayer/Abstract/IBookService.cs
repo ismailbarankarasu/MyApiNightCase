@@ -13,5 +13,8 @@ namespace MyApiNightCase.BusinessLayer.Abstract
         public BookWithAuthorDto TGetRandomBookWithAuthor();
         public List<LastFourBookWithAuthorDto> TGetLastFourBooks();
         public List<BookWithAuthorAndCategory> TAllBookWithAuthorAndCategory();
+        public int TBookCount();
+        public double TAvgBookPrice();
+        public List<BookWithAuthorListAndCategoryList> TAllBookWithAuthorListAndCategoryList();
     }
 }

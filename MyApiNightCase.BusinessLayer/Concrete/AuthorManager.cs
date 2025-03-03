@@ -19,6 +19,11 @@ namespace MyApiNightCase.BusinessLayer.Concrete
             _authorDal = authorDal;
         }
 
+        public int TAuthorCount()
+        {
+            return _authorDal.AuthorCount();
+        }
+
         public void TDelete(int id)
         {
             _authorDal.Delete(id);

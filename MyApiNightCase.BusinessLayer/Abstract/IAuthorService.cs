@@ -11,5 +11,6 @@ namespace MyApiNightCase.BusinessLayer.Abstract
     public interface IAuthorService : IGenericService<Author>
     {
         public List<ResultAuthorDto> TRandomFourAuthor();
+        public int TAuthorCount();
     }
 }

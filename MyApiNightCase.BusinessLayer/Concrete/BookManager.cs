@@ -24,6 +24,21 @@ namespace MyApiNightCase.BusinessLayer.Concrete
             return _bookDal.AllBookWithAuthorAndCategory();
         }
 
+        public List<BookWithAuthorListAndCategoryList> TAllBookWithAuthorListAndCategoryList()
+        {
+            return _bookDal.AllBookWithAuthorListAndCategoryList();
+        }
+
+        public double TAvgBookPrice()
+        {
+            return _bookDal.AvgBookPrice();
+        }
+
+        public int TBookCount()
+        {
+            return _bookDal.BookCount();
+        }
+
         public void TDelete(int id)
         {
             _bookDal.Delete(id);
