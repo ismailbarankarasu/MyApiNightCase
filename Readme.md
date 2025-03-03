@@ -6,7 +6,59 @@
 
 ## 🌟 Proje Hakkında
 
-MyApiNightCase, modern web teknolojileri kullanılarak geliştirilmiş kapsamlı bir kitap yönetim sistemidir. Bu proje, kitapların, yazarların ve özelliklerin yönetimini kolaylaştırmak için tasarlanmış kullanıcı dostu bir arayüz sunar.
+MyApiNightCase, modern web teknolojileri kullanılarak geliştirilmiş kapsamlı bir kitap yönetim sistemidir. Bu proje, N-Tier Architecture prensiplerine uygun olarak tasarlanmış olup, API ve MVC mimarisini bir arada kullanmaktadır.
+
+### Sistem Özellikleri:
+
+#### 📚 Kitap Yönetimi
+- Kitapların detaylı bilgilerini (başlık, yazar, kategori, fiyat, resim) yönetme
+- Kategorilere göre filtreleme ve arama
+- Sayfalama sistemi ile optimize edilmiş listeleme
+- AJAX tabanlı CRUD operasyonları
+
+#### ✍️ Yazar Yönetimi
+- Yazar profil bilgileri ve fotoğraf yönetimi
+- Yazarlara ait kitapların ilişkisel yönetimi
+- SweetAlert2 ile modern bildirim sistemi
+- Modal pencereler ile hızlı işlem yapabilme
+
+#### 🎯 Öne Çıkan Özellikler
+- Özelleştirilebilir dashboard arayüzü
+- Responsive tasarım ile mobil uyumluluk
+- Modern ve kullanıcı dostu arayüz
+- Real-time veri güncelleme
+
+#### 🔒 Güvenlik
+- API katmanında CORS politikası
+- Güvenli HTTP istekleri
+- Validation kontrolleri
+- Hata yönetimi ve loglama
+
+### Teknik Detaylar:
+- Entity Framework Core ile veritabanı işlemleri
+- Repository Pattern ile veri erişim katmanı
+- Service Pattern ile iş mantığı katmanı
+- MVC pattern ile kullanıcı arayüzü
+- Bootstrap 5 ile modern ve responsive tasarım
+- jQuery ve AJAX ile dinamik sayfa güncellemeleri
+
+### Kullanım Senaryoları:
+1. **Kitap İşlemleri:**
+   - Yeni kitap ekleme
+   - Mevcut kitapları güncelleme
+   - Kitap silme
+   - Detaylı kitap bilgilerini görüntüleme
+
+2. **Yazar İşlemleri:**
+   - Yazar profili oluşturma
+   - Yazar bilgilerini güncelleme
+   - Yazar silme
+   - Yazara ait kitapları listeleme
+
+3. **Öne Çıkan Özellikler:**
+   - Özel içerik yönetimi
+   - Görsel düzenleme
+   - İçerik organizasyonu
 
 ## 🚀 Özellikler
 
@@ -126,8 +178,6 @@ erDiagram
 3. Commit'leyin (`git commit -m 'feat: Add amazing feature'`)
 4. Push'layın (`git push origin feature/amazing-feature`)
 5. Pull Request açın
-
-
 
 ## 👥 İletişim
 
