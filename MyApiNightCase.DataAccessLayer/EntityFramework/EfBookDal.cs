@@ -36,6 +36,37 @@ namespace MyApiNightCase.DataAccessLayer.EntityFramework
             return values;
         }
 
+        public List<BookWithAuthorListAndCategoryList> AllBookWithAuthorListAndCategoryList()
+        {
+            var values = context.Books
+                .Include(x => x.Author)
+                .Include(x => x.Category)
+                .Select(a => new BookWithAuthorListAndCategoryList
+                {
+                    BookId = a.BookId,
+                    BookTitle = a.Title,
+                    AuthorId = a.AuthorId,
+                    AuthorName = a.Author.NameSurname,
+                    Price = a.Price,
+                    CategoryId = a.CategoryId,
+                    CategoryName = a.Category.Name,
+                    ImageUrl= a.ImageUrl
+                }).ToList();
+            return values;
+        }
+
+        public double AvgBookPrice()
+        {
+            var averagePrice = context.Books.Average(x => (double)x.Price);
+            return Math.Round(averagePrice, 2);
+        }
+
+        public int BookCount()
+        {
+            var bookCount = context.Books.Count();
+            return bookCount;
+        }
+
         public List<LastFourBookWithAuthorDto> GetLastFourBooks()
         {
             var values = context.Books

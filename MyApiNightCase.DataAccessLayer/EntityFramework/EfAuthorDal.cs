@@ -20,6 +20,12 @@ namespace MyApiNightCase.DataAccessLayer.EntityFramework
             context = _context;
         }
 
+        public int AuthorCount()
+        {
+            var authorCount = context.Authors.Count();
+            return authorCount;
+        }
+
         public List<ResultAuthorDto> RandomFourAuthor()
         {
             var randomAuthors = context.Authors

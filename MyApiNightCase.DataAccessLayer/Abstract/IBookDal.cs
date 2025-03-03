@@ -13,5 +13,8 @@ namespace MyApiNightCase.DataAccessLayer.Abstract
         public BookWithAuthorDto GetRandomBookWithAuthor();
         public List<LastFourBookWithAuthorDto> GetLastFourBooks();
         public List<BookWithAuthorAndCategory> AllBookWithAuthorAndCategory();
+        public int BookCount();
+        public double AvgBookPrice();
+        public List<BookWithAuthorListAndCategoryList> AllBookWithAuthorListAndCategoryList();
     }
 }

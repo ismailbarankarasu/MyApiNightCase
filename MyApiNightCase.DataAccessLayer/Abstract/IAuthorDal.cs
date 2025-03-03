@@ -11,5 +11,6 @@ namespace MyApiNightCase.DataAccessLayer.Abstract
     public interface IAuthorDal : IGenericDal<Author>
     {
         public List<ResultAuthorDto> RandomFourAuthor();
+        public int AuthorCount();
     }
 }

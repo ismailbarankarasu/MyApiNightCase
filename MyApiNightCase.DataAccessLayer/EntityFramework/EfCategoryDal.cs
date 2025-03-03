@@ -12,8 +12,16 @@ namespace MyApiNightCase.DataAccessLayer.EntityFramework
 {
     public class EfCategoryDal : GenericRepository<Category>, ICategoryDal
     {
-        public EfCategoryDal(ApiCaseContext context) : base(context)
+        private readonly ApiCaseContext context;
+        public EfCategoryDal(ApiCaseContext _context) : base(_context)
         {
+            context = _context;
+        }
+
+        public int CategoryCount()
+        {
+            var value = context.Categories.Count();
+            return value;
         }
     }
 }
