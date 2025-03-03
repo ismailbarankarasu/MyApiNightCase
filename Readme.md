@@ -1,4 +1,4 @@
-# 📚 MyApiNightCase - Modern Kitap Yönetim Sistemi
+# 📚 MyApiNightCase - Kitap Yönetim Sistemi
 
 <div align="center">
   <img src="photos/Admin/Dashboard.jpg" alt="Dashboard" width="800">
