@@ -1,0 +1,383 @@
+@model List<MyApiNightCase.WebUI.Areas.Admin.Models.AuthorListWithoutBook>
+@{
+    ViewData["Title"] = "Yazar Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    var currentPage = ViewBag.CurrentPage;
+    var totalPages = ViewBag.TotalPages;
+    var totalItems = ViewBag.TotalItems;
+    var pageSize = ViewBag.PageSize;
+}
+
+<style>
+    .pagination {
+        margin-bottom: 0;
+    }
+    .page-link {
+        color: #5D87FF;
+        padding: 0.5rem 0.75rem;
+    }
+    .page-item.active .page-link {
+        background-color: #5D87FF;
+        border-color: #5D87FF;
+    }
+    .page-link:hover {
+        color: #2c5bff;
+    }
+    .preview-image {
+        max-width: 200px;
+        max-height: 200px;
+        margin-top: 10px;
+    }
+    .pagination-info {
+        color: #6c757d;
+        font-size: 0.875rem;
+    }
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="card-title fw-semibold">Yazar Listesi</h5>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAuthorModal">
+                            <i class="ti ti-plus"></i> Yeni Yazar Ekle
+                        </button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table text-nowrap mb-0 align-middle">
+                            <thead class="text-dark fs-4">
+                                <tr>
+                                    <th class="border-bottom-0"><h6 class="fw-semibold mb-0">Yazar</h6></th>
+                                    <th class="border-bottom-0"><h6 class="fw-semibold mb-0">İşlemler</h6></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var author in Model)
+                                {
+                                    <tr>
+                                        <td class="border-bottom-0">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <img src="@author.ImageUrl" alt="@author.NameSurname" width="45" height="45" class="rounded-circle">
+                                                <h6 class="fw-semibold mb-0">@author.NameSurname</h6>
+                                            </div>
+                                        </td>
+                                        <td class="border-bottom-0">
+                                            <div class="d-flex gap-2">
+                                                <button class="btn btn-warning btn-sm" onclick="showUpdateModal(@author.AuthorId, '@author.NameSurname', '@author.ImageUrl')">
+                                                    <i class="ti ti-edit"></i>
+                                                </button>
+                                                <button class="btn btn-danger btn-sm" onclick="deleteAuthor(@author.AuthorId, '@author.NameSurname')">
+                                                    <i class="ti ti-trash"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+
+                    @if (Model.Any())
+                    {
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="pagination-info">
+                                Toplam <strong>@totalItems</strong> yazardan
+                                <strong>@((currentPage - 1) * pageSize + 1)</strong> -
+                                <strong>@Math.Min(currentPage * pageSize, totalItems)</strong>
+                                arası gösteriliyor
+                            </div>
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination mb-0">
+                                    @if (currentPage > 1)
+                                    {
+                                        <li class="page-item">
+                                            <a class="page-link" href="@Url.Action("Index", new { page = currentPage - 1 })" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                    }
+
+                                    @for (int i = 1; i <= totalPages; i++)
+                                    {
+                                        <li class="page-item @(i == currentPage ? "active" : "")">
+                                            <a class="page-link" href="@Url.Action("Index", new { page = i })">@i</a>
+                                        </li>
+                                    }
+
+                                    @if (currentPage < totalPages)
+                                    {
+                                        <li class="page-item">
+                                            <a class="page-link" href="@Url.Action("Index", new { page = currentPage + 1 })" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    }
+                                </ul>
+                            </nav>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Yazar Ekleme Modal -->
+<div class="modal fade" id="addAuthorModal" tabindex="-1" aria-labelledby="addAuthorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addAuthorModalLabel">Yeni Yazar Ekle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addAuthorForm">
+                    <div class="mb-3">
+                        <label for="nameSurname" class="form-label">Ad Soyad</label>
+                        <input type="text" class="form-control" id="nameSurname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imageUrl" class="form-label">Resim URL</label>
+                        <input type="text" class="form-control" id="imageUrl" required>
+                    </div>
+                    <div class="text-center">
+                        <img id="imagePreview" class="preview-image d-none rounded-circle" alt="Yazar Resmi">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                <button type="button" class="btn btn-primary" onclick="createAuthor()">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Yazar Güncelleme Modal -->
+<div class="modal fade" id="updateAuthorModal" tabindex="-1" aria-labelledby="updateAuthorModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateAuthorModalLabel">Yazar Güncelle</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="updateAuthorForm">
+                    <input type="hidden" id="updateAuthorId">
+                    <div class="mb-3">
+                        <label for="updateNameSurname" class="form-label">Ad Soyad</label>
+                        <input type="text" class="form-control" id="updateNameSurname" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateImageUrl" class="form-label">Resim URL</label>
+                        <input type="text" class="form-control" id="updateImageUrl" required>
+                    </div>
+                    <div class="text-center">
+                        <img id="updateImagePreview" class="preview-image rounded-circle" alt="Yazar Resmi">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+                <button type="button" class="btn btn-primary" onclick="updateAuthor()">Güncelle</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    document.getElementById('imageUrl').addEventListener('input', function() {
+        const preview = document.getElementById('imagePreview');
+        const imageUrl = this.value;
+        
+        if (imageUrl) {
+            preview.src = imageUrl;
+            preview.classList.remove('d-none');
+        } else {
+            preview.classList.add('d-none');
+        }
+    });
+
+    function createAuthor() {
+        const nameSurname = document.getElementById('nameSurname').value;
+        const imageUrl = document.getElementById('imageUrl').value;
+
+        if (!nameSurname || !imageUrl) {
+            Swal.fire({
+                title: 'Hata!',
+                text: 'Lütfen tüm alanları doldurun.',
+                icon: 'error'
+            });
+            return;
+        }
+
+        const author = {
+            NameSurname: nameSurname,
+            ImageUrl: imageUrl
+        };
+
+        $.ajax({
+            url: 'https://localhost:7104/api/Author/CreateAuthor',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(author),
+            success: function(response) {
+                if (response.success !== false) {
+                    Swal.fire({
+                        title: 'Başarılı!',
+                        text: 'Yazar başarıyla eklendi.',
+                        icon: 'success',
+                        timer: 1500,
+                        showConfirmButton: false
+                    }).then(() => {
+                        $('#addAuthorModal').modal('hide');
+                        location.reload();
+                    });
+                } else {
+                    Swal.fire(
+                        'Hata!',
+                        'Yazar eklenirken bir hata oluştu.',
+                        'error'
+                    );
+                }
+            },
+            error: function(xhr) {
+                console.log('Hata Detayı:', xhr.responseText);
+                Swal.fire(
+                    'Hata!',
+                    'Bir hata oluştu! Lütfen tüm alanları doğru formatta doldurduğunuzdan emin olun.',
+                    'error'
+                );
+            }
+        });
+    }
+
+    function deleteAuthor(id, authorName) {
+        Swal.fire({
+            title: 'Emin misiniz?',
+            text: `${authorName} isimli yazarı silmek istediğinize emin misiniz?`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Evet, sil!',
+            cancelButtonText: 'İptal'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: "https://localhost:7104/api/Author/DeleteAuthor?id=" + id,
+                    type: 'DELETE',
+                    success: function (result) {
+                        if (result.success !== false) {
+                            Swal.fire({
+                                title: 'Başarılı!',
+                                text: 'Yazar başarıyla silindi.',
+                                icon: 'success',
+                                timer: 1500,
+                                showConfirmButton: false
+                            }).then(() => {
+                                location.reload();
+                            });
+                        } else {
+                            Swal.fire(
+                                'Hata!',
+                                'Yazar silinirken bir hata oluştu.',
+                                'error'
+                            );
+                        }
+                    },
+                    error: function () {
+                        Swal.fire(
+                            'Hata!',
+                            'Bir hata oluştu!',
+                            'error'
+                        );
+                    }
+                });
+            }
+        });
+    }
+
+    document.getElementById('updateImageUrl').addEventListener('input', function() {
+        const preview = document.getElementById('updateImagePreview');
+        const imageUrl = this.value;
+        
+        if (imageUrl) {
+            preview.src = imageUrl;
+            preview.classList.remove('d-none');
+        } else {
+            preview.classList.add('d-none');
+        }
+    });
+
+    function showUpdateModal(authorId, nameSurname, imageUrl) {
+        document.getElementById('updateAuthorId').value = authorId;
+        document.getElementById('updateNameSurname').value = nameSurname;
+        document.getElementById('updateImageUrl').value = imageUrl;
+        document.getElementById('updateImagePreview').src = imageUrl;
+        
+        new bootstrap.Modal(document.getElementById('updateAuthorModal')).show();
+    }
+
+    function updateAuthor() {
+        const authorId = document.getElementById('updateAuthorId').value;
+        const nameSurname = document.getElementById('updateNameSurname').value;
+        const imageUrl = document.getElementById('updateImageUrl').value;
+
+        if (!nameSurname || !imageUrl) {
+            Swal.fire({
+                title: 'Hata!',
+                text: 'Lütfen tüm alanları doldurun.',
+                icon: 'error'
+            });
+            return;
+        }
+
+        const author = {
+            AuthorId: parseInt(authorId),
+            NameSurname: nameSurname,
+            ImageUrl: imageUrl
+        };
+
+        $.ajax({
+            url: 'https://localhost:7104/api/Author/UpdateAuthor',
+            type: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(author),
+            success: function(response) {
+                if (response.success !== false) {
+                    Swal.fire({
+                        title: 'Başarılı!',
+                        text: 'Yazar başarıyla güncellendi.',
+                        icon: 'success',
+                        timer: 1500,
+                        showConfirmButton: false
+                    }).then(() => {
+                        $('#updateAuthorModal').modal('hide');
+                        location.reload();
+                    });
+                } else {
+                    Swal.fire(
+                        'Hata!',
+                        'Yazar güncellenirken bir hata oluştu.',
+                        'error'
+                    );
+                }
+            },
+            error: function(xhr) {
+                console.log('Hata Detayı:', xhr.responseText);
+                Swal.fire(
+                    'Hata!',
+                    'Bir hata oluştu! Lütfen tüm alanları doğru formatta doldurduğunuzdan emin olun.',
+                    'error'
+                );
+            }
+        });
+    }
+</script> 

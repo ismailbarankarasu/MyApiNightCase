@@ -13,7 +13,7 @@
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
             <ul id="sidebarnav">
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                    <a class="sidebar-link" href="@Url.Action("Index", "Default", new { area = "Admin" })" aria-expanded="false">
                         <span>
                             <i class="ti ti-layout-dashboard"></i>
                         </span>
@@ -33,7 +33,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-alerts.html" aria-expanded="false">
+                    <a class="sidebar-link" href="@Url.Action("Index", "AdminAuthor", new { area = "Admin" })" aria-expanded="false">
                         <span>
                             <i class="ti ti-alert-circle"></i>
                         </span>
@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+                    <a class="sidebar-link" href="@Url.Action("Index", "AdminFeature", new { area = "Admin" })" aria-expanded="false">
                         <span>
                             <i class="ti ti-cards"></i>
                         </span>

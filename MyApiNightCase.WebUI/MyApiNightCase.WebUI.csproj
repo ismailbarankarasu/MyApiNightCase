@@ -14,4 +14,8 @@
     <ProjectReference Include="..\MyApiNightCase.BusinessLayer\MyApiNightCase.BusinessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+  </ItemGroup>
+
 </Project>
